@@ -9,3 +9,16 @@ elsif (i == 1) then
 else
     puts("OUTRO")
 end
+
+class PontoXY
+    def set (x, y)
+        @x = x
+        @y = y
+    end
+    def showPoints
+        puts("x: #{@x}   y: #{@y}")
+    end
+end
+p1 = PontoXY.new
+p1.set(5, 9)
+p1.showPoints()
