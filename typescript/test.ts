@@ -1,4 +1,18 @@
 console.log('Hello TypeScript');
+import readline = require('readline');
+
+var rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+})
+
+function input(text, callback) {
+    rl.question(text, function (x) {
+        rl.close();
+        callback(x);
+    })
+}
+
 
 class pontoXY {
     x : number;
@@ -23,3 +37,8 @@ enum diaSemana {
 }
 
 console.log(diaSemana[3])   //out: quarta
+
+input('Qual seu nome?\n', answer);
+function answer(x) {
+    console.log('Respondido: ' + x);
+}
