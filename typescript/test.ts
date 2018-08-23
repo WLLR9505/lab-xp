@@ -36,7 +36,19 @@ enum diaSemana {
     sabado
 }
 
-console.log(diaSemana[3])   //out: quarta
+namespace Semana {
+    export function diaDeTrabalho ( dia : diaSemana) {
+        if (dia == diaSemana.domingo || dia == diaSemana.sabado) {
+            return false;
+        } else {
+            return true;
+        }
+    }
+}
+
+input('Dia de trabalho?\n', function (x : number) {
+    console.log(Semana.diaDeTrabalho(x));
+});
 
 input('Qual seu nome?\n', answer);
 function answer(x) {
