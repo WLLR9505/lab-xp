@@ -13,11 +13,11 @@ function input(text, callback) {
     })
 }
 
+interface Ponto { x: number; y: number };
 
 class pontoXY {
-    x : number;
-    y : number;
-    constructor (x : number, y : number) {
+    xy : Ponto;
+    constructor (x : number , y : number) {
         this.x = x;
         this.y = y;
     }
