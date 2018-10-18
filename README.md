@@ -5,7 +5,7 @@
 Cada linguagem está em seu respectivo branch
 
 branch      |     linguagem
--           |   -
+-|-
 c-lang      | C
 rb-lang     | Ruby
 ts-lang     | TypeScript
