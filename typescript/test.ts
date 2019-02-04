@@ -21,10 +21,24 @@ class pontoXY {
         this.x = x;
         this.y = y;
     }
+
+    showPoints() {
+        console.log(this);
+    }
+}
+
+class pontoXYZ extends pontoXY {
+    z : number;
+    constructor (x : number , y : number, z : number) {
+        super(x, y);
+        this.z = z;
+    }
 }
 
 var p1 = new pontoXY(5, 9);
-console.log(p1);
+var p2 = new pontoXYZ(5, 9, 0);
+p1.showPoints();
+p2.showPoints();
 
 enum diaSemana {
     domingo,    //0
